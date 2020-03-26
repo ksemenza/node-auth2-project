@@ -57,7 +57,7 @@ function generateToken(user) {
         username: user.username,
         department: user.department
     }
-    const secret = process.env.JWT_SECRET || 'so much to learn to set up a database';
+    const secret = process.env.JWT_SECRET || 'no BE and no FE makes kim a dull girl';
     const options = {
         expiresIn: '8h'
     }

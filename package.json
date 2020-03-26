@@ -4,7 +4,9 @@
   "description": "- Authentication.\r - Express Middleware.\r - JSON Web Tokens (JWTs).\r - Hashing Passwords.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,12 @@
     "url": "https://github.com/ksemenza/node-auth2-project/issues"
   },
   "homepage": "https://github.com/ksemenza/node-auth2-project#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -26,6 +34,8 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.13",
     "morgan": "^1.10.0",
+    "node": "^13.11.0",
+    "nodemon": "^2.0.2",
     "sqlite3": "^4.1.1"
   }
 }

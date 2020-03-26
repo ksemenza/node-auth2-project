@@ -7,7 +7,7 @@ module.exports = {
     removeUser    
 }
 
-const db = require('../data/db-config.js');
+const db = require('../db-config');
 
 function addUser(newUser) {
     return db('users')
